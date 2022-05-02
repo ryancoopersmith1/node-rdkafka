@@ -1,4 +1,4 @@
-// ====== Generated from librdkafka 1.8.2 file src-cpp/rdkafkacpp.h ======
+// ====== Generated from librdkafka 1.9.0 file src-cpp/rdkafkacpp.h ======
 export const CODES: { ERRORS: {
   /* Internal errors to rdkafka: */
   /** Begin internal error codes (**-200**) */
@@ -20,15 +20,15 @@ export const CODES: { ERRORS: {
   /** Produced message timed out (**-192**) */
   ERR__MSG_TIMED_OUT: number,
   /** Reached the end of the topic+partition queue on
-   *  the broker. Not really an error.
-   *  This event is disabled by default,
-   *  see the `enable.partition.eof` configuration property (**-191**) */
+  *  the broker. Not really an error.
+  *  This event is disabled by default,
+  *  see the `enable.partition.eof` configuration property (**-191**) */
   ERR__PARTITION_EOF: number,
   /** Permanent: Partition does not exist in cluster (**-190**) */
   ERR__UNKNOWN_PARTITION: number,
   /** File or filesystem error (**-189**) */
   ERR__FS: number,
-   /** Permanent: Topic does not exist in cluster (**-188**) */
+  /** Permanent: Topic does not exist in cluster (**-188**) */
   ERR__UNKNOWN_TOPIC: number,
   /** All broker connections are down (**-187**) */
   ERR__ALL_BROKERS_DOWN: number,
@@ -50,9 +50,9 @@ export const CODES: { ERRORS: {
   ERR__UNKNOWN_GROUP: number,
   /** Operation in progress (**-178**) */
   ERR__IN_PROGRESS: number,
-   /** Previous operation in progress, wait for it to finish (**-177**) */
+  /** Previous operation in progress, wait for it to finish (**-177**) */
   ERR__PREV_IN_PROGRESS: number,
-   /** This operation would interfere with an existing subscription (**-176**) */
+  /** This operation would interfere with an existing subscription (**-176**) */
   ERR__EXISTING_SUBSCRIPTION: number,
   /** Assigned partitions (rebalance_cb) (**-175**) */
   ERR__ASSIGN_PARTITIONS: number,
@@ -126,10 +126,8 @@ export const CODES: { ERRORS: {
   ERR__NOOP: number,
   /** No offset to automatically reset to (**-140**) */
   ERR__AUTO_OFFSET_RESET: number,
-
   /** End internal error codes (**-100**) */
   ERR__END: number,
-
   /* Kafka broker errors: */
   /** Unknown broker error (**-1**) */
   ERR_UNKNOWN: number,

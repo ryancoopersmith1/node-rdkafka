@@ -1,8 +1,8 @@
 {
-  "name": "node-rdkafka",
-  "version": "v2.12.0",
+  "name": "@moven/node-rdkafka",
+  "version": "v2.12.0-9.3.0.0",
   "description": "Node.js bindings for librdkafka",
-  "librdkafka": "1.8.2",
+  "librdkafka": "1.9.0",
   "main": "lib/index.js",
   "scripts": {
     "configure": "node-gyp configure",
@@ -12,13 +12,17 @@
     "install": "node-gyp rebuild",
     "prepack": "node ./ci/prepublish.js"
   },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "kafka",
     "librdkafka"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:Blizzard/node-rdkafka.git"
+    "url": "git@github.com:moven/node-rdkafka.git"
   },
   "contributors": [
     {
